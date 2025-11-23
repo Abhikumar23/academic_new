@@ -27,7 +27,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin: "https://academic-new-nine.vercel.app",       // allow all domains
+    origin: "https://academic-new-five.vercel.app",       // allow all domains
     credentials: true
 }));
 
