@@ -26,12 +26,11 @@ database.connect();
 app.use(express.json());
 app.use(cookieParser());
 
-app.use(
-  cors({
-    origin: "https://academic-new-nine.vercel.app", // ❗ No trailing slash
-    credentials: true,
-  })
-);
+app.use(cors({
+    origin: "*",       // allow all domains
+    methods: "GET,POST,PUT,DELETE",
+    credentials: true
+}));
 
 app.use(
 	fileUpload({
