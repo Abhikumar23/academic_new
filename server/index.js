@@ -28,8 +28,8 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: "http://localhost:3000", // ✅ No trailing slash
-    credentials: true,               // ✅ allow cookies/auth headers
+    origin: "https://academic-new-nine.vercel.app", // ❗ No trailing slash
+    credentials: true,
   })
 );
 
